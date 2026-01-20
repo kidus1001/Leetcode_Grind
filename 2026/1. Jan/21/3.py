@@ -1,19 +1,30 @@
+# class Solution(object):
+#     def search(self, nums, target):
+#         for i in nums:
+#             if i == target:
+#                 return True
+#         return False
+#         """
+#         :type nums: List[int]
+#         :type target: int
+#         :rtype: bool
+#         """
+
+
+# A bit refinement in the res and ress handling
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         n = len(s)
         res = 0
         
         for i in range(n):
-            ress = 0
             visited = set()
             for j in range(i, n):
                 if s[j] not in visited:
                     visited.add(s[j])
-                    ress+=1
+                    res = max(res, j-i+1)
                 else:
                     break
-            if ress > res:
-                res = ress
         return res
         """
         :type s: str
