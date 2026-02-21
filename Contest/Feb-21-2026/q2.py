@@ -1,3 +1,5 @@
+# Got a hang of it, not done yet tho
+
 n, q = map(int, input().split())
 
 prices = list(map(int, input().split()))
