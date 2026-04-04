@@ -1,0 +1,1 @@
+{"name":"Local: q2","url":"/Users/kidus1001/Desktop/A2SV/LeetcodeGrind/Contest/Apr-04-2026 /q2.py","tests":[{"id":1775324917998,"input":"2\n5\n1 4 3 2 5\n5\n1 4 2 3 5\n","output":"YES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/kidus1001/Desktop/A2SV/LeetcodeGrind/Contest/Apr-04-2026 /q2.py","group":"local","local":true}
