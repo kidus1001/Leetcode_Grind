@@ -1,14 +1,15 @@
 class Solution(object):
     def hasPathSum(self, root, targetSum):
-        def myFun (root, sum):
-            if not root:
+        def helperFunction (root, sum):
+            if root is None:
                 return False
             sum += root.val
 
-            if not root.left and not root.right:
-                if (sum == targetSum):
+            if root.left is None and root.right is None:
+                if sum == targetSum:
                     return True
                 else:
                     return False
-            return myFun (root.left, sum) or myFun (root.right, sum)
-        return myFun(root, 0)
+            return helperFunction (root.left,sum) or helperFunction (root.right, sum)
+
+        return helperFunction (root, 0)
